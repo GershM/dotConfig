@@ -44,4 +44,3 @@ require("plugins")
 
 
 
-require("deploy.nvim")

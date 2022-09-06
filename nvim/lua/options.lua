@@ -17,6 +17,7 @@ vim.opt.mouse = "i" -- Enable mouse on insert mode
 vim.opt.showmatch = true -- Highlights the matching parenthesis
 vim.opt.termguicolors = true -- Required for some themes
 -- vim.opt.foldlevel = 1         -- Do not fold inside folds. Better for markdown and PHP classes
+vim.opt.autoread = true
 vim.opt.cursorline = true -- Highlight the current cursor line (Can slow the UI)
 vim.opt.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shift the text
 vim.opt.hidden = true -- Allow multple buffers
@@ -26,6 +27,9 @@ vim.opt.updatetime = 750 -- I have a modern machine. No need to wait that long
 vim.opt.shortmess:append("c") -- Don't pass messages to |ins-completion-menu|.
 vim.opt.encoding = "utf-8" -- Just in case
 vim.opt.cmdheight = 1 -- Increase this to add more space at the commands at the bottom
+vim.o.scrolloff = 8
+vim.o.clipboard = 'unnamedplus'
+vim.o.undodir = '~/.vim/undodir'
 vim.g.netrw_banner = 1 -- Show NetRW top information
 vim.g.netrw_liststyle = 3 -- Use nested tree style NetRW
 vim.g.netrw_winsize = 25 -- Lexplore takes 25% of the screen

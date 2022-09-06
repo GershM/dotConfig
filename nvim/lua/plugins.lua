@@ -59,6 +59,12 @@ use({ -- Monokay, Monokay-pro, Monokay-Soda  and Monokay-Ristretto themes
 use({ -- Port of VSCode's Tokio Night theme
     "folke/tokyonight.nvim",
 })
+
+use({ "GershM/deploy.nvim",
+    config = function()
+        require("deploy").setup()
+    end,
+})
 use({ -- Adaptation of the Sublime Text theme of the same name.
     "adrian5/oceanic-next-vim",
 })
@@ -220,12 +226,13 @@ use({ -- Shows you inside your `packaje.json` which packages can be upgraded
         require("package-info").setup()
     end,
 })
-use({ -- Show the actual color or RGB or CMYK values in your code
+use({ -- show the actual color or rgb or cmyk values in your code
     "norcalli/nvim-colorizer.lua",
     config = function()
         require("colorizer").setup()
     end,
 })
+
 --[[
   Finish plugin configuration
 --]]

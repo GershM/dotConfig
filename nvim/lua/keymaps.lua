@@ -96,3 +96,7 @@ map("n", "<leader>ff", "<cmd>lua vim.lsp.buf.formatting()<cr>", opts)
 
 
 map("n", "<leader>cr", "<cmd>!./%<cr>", opts)
+
+-- Deployment
+map("n", "<leader>pdf", "DRemoteUploadFile<cr>", opts)
+map("n", "<leader>pdF", "DRemoteDownloadFile<cr>", opts)
